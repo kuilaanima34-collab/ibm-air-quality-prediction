@@ -27,7 +27,7 @@ from sklearn.metrics import r2_score, accuracy_score, classification_report
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
-DATA_PATH   = os.path.join("data", "Air Quality.csv")
+DATA_PATH   = "Air Quality.csv" if os.path.exists("Air Quality.csv") else os.path.join("data", "Air Quality.csv")
 MODELS_DIR  = "models"
 os.makedirs(MODELS_DIR, exist_ok=True)
 
