@@ -13,7 +13,7 @@ import streamlit as st
 # Constants (re-exported so pages don't need to duplicate them)
 # ---------------------------------------------------------------------------
 MODELS_DIR = "models"
-DATA_PATH   = "Air Quality.csv" if os.path.exists("Air Quality.csv") else os.path.join("data", "Air Quality.csv")")
+DATA_PATH   = "Air Quality.csv" if os.path.exists("Air Quality.csv") else os.path.join("data", "Air Quality.csv")
 
 AQI_COLOURS = {
     "Good":      "#22c55e",
